@@ -2,7 +2,7 @@
   /*text-align: center; */
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 .header {
@@ -44,15 +44,15 @@
 .dashboard {
     padding-bottom: 20px;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
    gap: 20px;
    padding-bottom: 40px;
-   font-size: 1.4em;
+   font-size: 1.4rem;
 }
 
 
@@ -60,11 +60,86 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     padding-right: 50px;
 }
 
 
 .main {
-    background: gray;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+  
+
 }
+
+.projectMain {
+    padding: 0 0 20px 20px;
+}
+
+
+.projects {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   
+}
+
+
+
+
+.projectMain > .projects > .project {
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 40px;
+    background: white;
+    align-items: left;
+    
+}
+
+
+
+.proTitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.other {
+    margin: 0 20px 0 20px;
+}
+
+
+.announcements {
+    border: 1px solid blue;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+.annoTitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.annoText {
+    font-size: 14px;
+}
+
+
+.trending {
+    border: 1px solid blue;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
